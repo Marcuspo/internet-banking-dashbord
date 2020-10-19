@@ -30,9 +30,11 @@ function Forms() {
           </Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="success" type="submit" className="button">
-          Entrar <Emoji symbol="🚀" />
-        </Button>
+        <Link to="/dashbord">
+          <Button variant="success" type="submit" className="button">
+            Entrar <Emoji symbol="🚀" />
+          </Button>
+        </Link>
       </Form>
     </div>
   )
