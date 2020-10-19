@@ -1,12 +1,12 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
 import logo from "../../logo.png"
-import "../../App.css"
-
-import Principal from "../Principal/Principal.js"
+import { Link } from "react-router-dom"
 
 import Emoji from "../emoji.js"
+import Principal from "../Principal/Principal.js"
 
+import "../../App.css"
 import "./form.css"
 
 function Forms() {
@@ -31,11 +31,7 @@ function Forms() {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
         <Button variant="success" type="submit" className="button">
-          <span>
-            <Link>
-              Entrar <Emoji symbol="🚀" />
-            </Link>
-          </span>
+          Entrar <Emoji symbol="🚀" />
         </Button>
       </Form>
     </div>
