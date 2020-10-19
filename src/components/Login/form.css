@@ -8,7 +8,15 @@
   margin-top: 20px;
 }
 
-.nameLogin {
-  font-size: 13px;
-  margin: 90px;
+.user {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.password {
+  font-size: 16px;
+}
+
+.form {
+  flex-direction: row;
 }

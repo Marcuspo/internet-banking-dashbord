@@ -17,21 +17,25 @@ function Forms() {
       </div>
       <text className="nameLogin">Login:</text>
       <Form>
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group controlId="formBasicEmail" className="user">
           <Form.Label>
             Usuário <Emoji symbol="🙎‍♂️" />
           </Form.Label>
           <Form.Control type="user" placeholder="Digite seu usuário" />
         </Form.Group>
 
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group controlId="formBasicPassword" className="password">
           <Form.Label>
             Senha <Emoji symbol="🙊" />
           </Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button type="submit" className="button">
-          Entrar <Emoji symbol="🚀" />
+        <Button variant="success" type="submit" className="button">
+          <span>
+            <Link>
+              Entrar <Emoji symbol="🚀" />
+            </Link>
+          </span>
         </Button>
       </Form>
     </div>
