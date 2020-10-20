@@ -1,12 +1,14 @@
 import React from "react"
 import { Card, Button } from "react-bootstrap"
 
+import "./Extrato.css"
+
 import PostDataEmp from "../../mocks/empresas.json"
 
 function Extrato() {
   return (
-    <div>
-      <Card border="primary" style={{ width: "18rem" }}>
+    <div className="App-headerExtrato">
+      <Card border="primary" style={{ width: "18rem" }} className="cardExtrato">
         <Card.Header>Extrato</Card.Header>
         <Card.Body>
           <Card.Text>
