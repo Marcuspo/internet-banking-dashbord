@@ -1,10 +1,10 @@
 import React from "react"
 import { Form, Button } from "react-bootstrap"
-import logo from "../../logo.png"
 import { Link } from "react-router-dom"
 
+import logo from "../../logo.png"
+
 import Emoji from "../emoji.js"
-import Principal from "../Principal/Principal.js"
 
 import "../../App.css"
 import "./form.css"
