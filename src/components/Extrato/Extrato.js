@@ -12,22 +12,14 @@ function Extrato() {
         <Card.Header>Extrato</Card.Header>
         <Card.Body>
           <Card.Text>
-            {PostDataEmp.map((postDetail, index) => {
-              return (
-                <div>
-                  {postDetail.nomeEmpresa}: Saldo: {postDetail.saldo}
-                </div>
-              )
-            })}
+            {PostDataEmp[0].nomeEmpresa}: <p>Saldo: {PostDataEmp[0].saldo}</p>
           </Card.Text>
-          <Button variant="success" href="/dashbord/extrato" className="button">
-            Acessar extrato empresa 1
-          </Button>
-          <Button variant="success" href="/dashbord/extrato" className="button">
-            Acessar extrato empresa 2
-          </Button>
-          <Button variant="success" href="/dashbord/extrato" className="button">
-            Acessar extrato empresa 3
+          <Button
+            variant="success"
+            className="buttonExtrato"
+            href="/dashbord/extrato/3"
+          >
+            Acessar extrato {PostDataEmp[0].nomeEmpresa}
           </Button>
         </Card.Body>
       </Card>
